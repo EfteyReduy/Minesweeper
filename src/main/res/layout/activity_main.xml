@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/flagId"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="3"
+            android:alpha="1"
+            android:background="#92756666"
+            android:gravity="center"
+            android:text="@string/flag"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/restartId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="2"
+            android:background="#92756666"
+            android:gravity="center"
+            android:text="@string/none"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/homeButtonId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="2"
+            android:background="#92756666"
+            android:drawableTop="@android:drawable/ic_delete"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textAlignment="center"
+            android:textColorLink="#00C01111" />
+
+        <TextView
+            android:id="@+id/timerId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="3"
+            android:background="#92756666"
+            android:gravity="center"
+            android:text="@string/startTimer"
+            android:textAlignment="center"
+            android:textColor="#F30B0B"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/flagGridId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="1dp"
+        android:horizontalSpacing="1dp"
+        android:textAlignment="center"
+        android:verticalSpacing="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/flagButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </GridView>
+
+    <GridView
+        android:id="@+id/mapGridId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="1dp"
+        android:horizontalSpacing="1dp"
+        android:scrollbarSize="0dp"
+        android:textAlignment="center"
+        android:verticalSpacing="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/flagButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </GridView>
+
+    <GridView
+        android:id="@+id/uncoveredGridId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="1dp"
+        android:alpha="1"
+        android:horizontalSpacing="1dp"
+        android:textAlignment="center"
+        android:verticalSpacing="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/flagButtonId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </GridView>
+
+    <Button
+        android:id="@+id/flagButtonId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha=".3"
+        android:background="@color/colorPrimary"
+        android:text="@string/flag"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flagGridId" />
+
+
+</android.support.constraint.ConstraintLayout>

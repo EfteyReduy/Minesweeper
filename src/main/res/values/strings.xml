@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Minesweeper</string>
+
+    <string name="none">😃</string>
+    <string name="bombEmoji">💣</string>
+    <string name="blastEmoji">💥</string>
+    <string name="eight">8⃣</string>
+    <string name="flag">🚩</string>
+    <string name="home">HOME</string>
+    <string name="startTimer">00:00</string>
+
+
+    <string name="rule_intro">The game consists of the top panel, the playing field and a button on the bottom.\n
+    \nTop panel:\n
+    </string>
+
+    <string name="rule_smile">To restart the game, click the Smile button. This can be done at any time, even in the middle of the current game.
+        But remember, this will delete the current progress.\n
+    </string>
+    <string name="rule_timer">\nThe timer shows the elapsed time since the start of the game. This timer can also be used as a pause Button.
+        If you click the timer after the game is started, the game will be paused.
+        If you click it when the game is paused the game will resume again.\n</string>
+
+    <string name="rule_home">Basically the home button and back button works the same.
+        If you want to go back to change difficulty, you can press any of them.\n</string>
+
+    <string name="rule_flag">You can play the game in two modes: Mine or Flag. In Mine mode you can open cells. In flag mode you can flag cells.
+        If you press a cell in Mine mode, the cell will be uncovered. And if the cell contain a bomb, you will lost the game. You will not able to open a cell which is already flaged.
+        If you press a cell in Flag mode, the cell will be marked. Which means you detected a bomb under the cell.
+        In Flag mode if you press a cell which is already flagged, the flag will be taken away.\n
+    </string>
+
+    <string name="rule_finish">The best way to learn about the game is to play the game 😃. \nSo GOOD LUCK!!!\n</string>
+
+</resources>
